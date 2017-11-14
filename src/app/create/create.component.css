@@ -1,0 +1,28 @@
+.productform{
+	width: 500px;
+	display: inline-block;
+	border: 1pt solid black;
+	background-color: mintcream;
+	padding: 10px;
+}
+h1{
+	margin: 10px;
+}
+input{
+	float: right;
+}
+.confirm{
+	color: white;
+	background-color: green;
+	width: 100px;
+}
+.field{
+	width: 275px;
+}
+.block{
+	display: inline-block;
+	vertical-align: top;
+}
+.confirm:disabled{
+	background-color:#dddddd;
+}

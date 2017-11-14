@@ -1,0 +1,33 @@
+.sub{
+	display: inline-block;
+	border: 1pt solid black;
+	background-color: mintcream;
+	padding: 10px;
+}
+h1{
+	margin: 10px;
+}
+input{
+	float: right;
+}
+.product{
+	border: 1pt solid black;
+	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	margin: 10px;
+	padding: 20px;
+}
+.image{
+	width: 200px;
+}
+.edit{
+	background-color: orange;
+	width: 100%;
+}
+.delete{
+	color: white;
+	background-color: red;
+	width: 100%;
+}

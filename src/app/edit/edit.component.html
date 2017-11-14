@@ -1,0 +1,30 @@
+<div class="productform">
+		<h1>Edit Product</h1>
+		<form class="block" #formData='ngForm' (submit)="onSubmit()">
+			<p class="field">
+				<label for="title">Title</label>
+				<input type="text" name="title" id="title" required minlength="4" [(ngModel)]="product.title" #title="ngModel">
+			</p>
+			<p class="field">
+				<label for="price">Price</label>
+				<input type="number" name="price" id="price" required step="0.01" min="0" [(ngModel)]="product.price" #price="ngModel">
+			</p>
+			<p class="field">
+				<label for="image_url">Image URL</label>
+				<input type="text" name="image_url" id="image_url" [(ngModel)]="product.image_url">
+			</p>
+			<p class="field">
+				<button type="button" (click)="onDelete()" class="deleteprod">Delete</button>
+				<input type="submit" value="Update" class="confirm" [disabled]="formData.invalid">
+			</p>
+		</form>
+		<div class="block">
+			<p>
+				<span *ngIf="title.errors?.required && title.dirty">Title is required</span>
+				<span *ngIf="title.errors?.minlength && title.dirty">Title must be at least 4 characters</span>
+			</p>
+			<p>
+				<span *ngIf="price.errors?.required && price.dirty">Price is required</span>
+			</p>
+		</div>
+	</div>
